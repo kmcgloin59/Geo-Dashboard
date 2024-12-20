@@ -1,0 +1,23 @@
+[
+  {
+    "name": "Florida Municipal Bond A",
+    "lat": 27.5,
+    "lng": -81.5,
+    "rating": "AA",
+    "maturity": 2030
+  },
+  {
+    "name": "Florida Municipal Bond B",
+    "lat": 27.2,
+    "lng": -81.2,
+    "rating": "AAA",
+    "maturity": 2025
+  },
+  {
+    "name": "Florida Municipal Bond C",
+    "lat": 28.5,
+    "lng": -82.5,
+    "rating": "A",
+    "maturity": 2040
+  }
+]

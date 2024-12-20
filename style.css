@@ -1,0 +1,69 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+header nav a {
+    color: #fff;
+    margin-left: 15px;
+    text-decoration: none;
+}
+
+.container {
+    flex: 1;
+    display: flex;
+    overflow: hidden;
+}
+
+#map {
+    flex: 1;
+    height: 100%;
+}
+
+.sidebar {
+    width: 300px;
+    background: #f8f8f8;
+    padding: 10px;
+    box-sizing: border-box;
+    border-left: 1px solid #ccc;
+    overflow-y: auto;
+}
+
+.sidebar h2 {
+    margin-top: 0;
+}
+
+.sidebar label {
+    display: block;
+    margin-top: 10px;
+}
+
+.sidebar select, .sidebar input[type=range], .sidebar button {
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.affected-bond-icon {
+    background-color: transparent;
+    text-align: center;
+    line-height: 20px;
+    color: red;
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="style.css" />
+    <title>Geo Financial Dashboard</title>
+</head>
+<body>
+    <header>
+        <div class="logo">MyGeoFinApp</div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Alerts</a>
+            <a href="#">Scenarios</a>
+            <a href="#">ESG</a>
+            <a href="#">My Portfolio</a>
+            <a href="#">Settings</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div id="map"></div>
+        <div class="sidebar">
+            <h2>Filters</h2>
+            <label>Asset Type:</label>
+            <select id="assetType">
+                <option>Municipal Bonds</option>
+                <option>Corporate Bonds</option>
+                <option>Futures</option>
+            </select>
+
+            <label>Maturity Range (years):</label>
+            <input type="range" id="maturityRange" min="0" max="30" value="10"/>
+
+            <label>Credit Rating:</label>
+            <select id="creditRating">
+                <option value="ALL">ALL</option>
+                <option value="AAA">AAA</option>
+                <option value="AA">AA</option>
+                <option value="A">A</option>
+                <option value="BBB">BBB</option>
+            </select>
+
+            <button id="applyFilters">Apply Filters</button>
+            <button id="exportData">Export Data</button>
+
+            <h2>Scenario</h2>
+            <p>Hurricane Approaching Florida</p>
+            <button id="runScenario">Run Hurricane Scenario</button>
+
+            <h3>Affected Bonds</h3>
+            <ul id="affectedBonds"></ul>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
